@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ColorService {
+  mainColor: string = '#000';
 
-  constructor() { }
+  setMainColor(color: string): void {
+    this.mainColor = color;
+  }
 }
