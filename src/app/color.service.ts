@@ -9,4 +9,5 @@ export class ColorService {
   setMainColor(color: string): void {
     this.mainColor = color;
   }
+
 }

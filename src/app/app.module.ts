@@ -7,6 +7,7 @@ import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { HeroComponent } from './pages/hero/hero.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './layouts/footer/footer.component';
+import { ChangeColorComponent } from './layouts/change-color/change-color.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './layouts/footer/footer.component';
     NavbarComponent,
     HeroComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    ChangeColorComponent
   ],
   imports: [
     BrowserModule,
