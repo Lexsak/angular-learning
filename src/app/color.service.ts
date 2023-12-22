@@ -5,9 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class ColorService {
   mainColor: string = '#000';
+  secondColor: string = '#555';
 
   setMainColor(color: string): void {
     this.mainColor = color;
   }
 
+  setSecondColor(color: string): void {
+    this.secondColor = color;
+  }
 }

@@ -13,8 +13,13 @@ export class ChangeColorComponent {
 
   constructor(private colorService: ColorService) {}
 
-  changeColor(event: any) {
-    const color = event?.target?.value 
+  changeMainColor(event: any) {
+    const color = event?.target?.value;
     this.colorService.setMainColor(color);
   }
+
+  changeSecondColor(event: any){
+    const color = event?.target?.value;
+    this.colorService.setSecondColor(color);
+  };
 }
