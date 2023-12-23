@@ -1,5 +1,3 @@
-// change-color.component.ts
-
 import { Component } from '@angular/core';
 import { ColorService } from 'src/app/color.service';
 
@@ -18,8 +16,9 @@ export class ChangeColorComponent {
     this.colorService.setMainColor(color);
   }
 
-  changeSecondColor(event: any){
+  changeSecondColor(event: any) {
     const color = event?.target?.value;
     this.colorService.setSecondColor(color);
-  };
+  }
+
 }

@@ -1,2 +1,7 @@
-<input type="color" (input)="changeMainColor($event)">
-<input type="color" (input)="changeSecondColor($event)">
+<input type="color" (input)="changeMainColor($event)" />
+<input type="color" (input)="changeSecondColor($event)" />
+
+<hr />
+<div class="colorContainer">
+  <input type="color" class="btn-color color-text" (input)="changeSecondColor($event)" />
+</div>
