@@ -1,6 +1,4 @@
-// change-color.component.ts
-
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component} from '@angular/core';
 import { ColorService } from 'src/app/color.service';
 
 @Component({
@@ -24,18 +22,4 @@ export class ChangeColorComponent {
   }
 
 
-
-  // safasfasf
-  @Output() colorSelected = new EventEmitter<string>();
-  displayColorPicker = false;
-
-  openColorPicker() {
-    this.displayColorPicker = !this.displayColorPicker;
-  }
-
-  selectColor(event: any) {
-    const selectedColor = event.target.value;
-    this.colorSelected.emit(selectedColor);
-    this.displayColorPicker = false;
-  }
 }

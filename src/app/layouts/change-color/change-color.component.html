@@ -1,8 +1,8 @@
 <input type="color" (input)="changeMainColor($event)">
 
 
-<div class="color-button" (click)="openColorPicker()">
-      <input type="color" #colorPicker *ngIf="displayColorPicker" (input)="selectColor($event)">
-      <span *ngIf="!displayColorPicker">Choose Color</span>
-    </div>
+<div class="choose-btn" [style.background-color]="color">
+    <p>Primary Color</p>
+</div>
+
 
