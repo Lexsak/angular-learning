@@ -1,16 +1,2 @@
-.choose-btn{
-    width: 100px;
-    padding: 8px;
-    color: white;
-    background-color: red;
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-}
 
-#colorPickerContainer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+
