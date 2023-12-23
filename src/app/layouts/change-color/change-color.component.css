@@ -12,6 +12,16 @@
   background-color: red;
   position: relative;
 }
+.btn-color::after {
+  content: "Text";
+  position: absolute;
+  width: auto;
+  height: auto;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .texscior {
   position: absolute;
