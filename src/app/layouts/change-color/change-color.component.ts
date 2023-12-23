@@ -1,6 +1,6 @@
 // change-color.component.ts
 
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ColorService } from 'src/app/color.service';
 
 @Component({
@@ -18,8 +18,24 @@ export class ChangeColorComponent {
     this.colorService.setMainColor(color);
   }
 
-  changeSecondColor(event: any){
+  changeSecondColor(event: any) {
     const color = event?.target?.value;
     this.colorService.setSecondColor(color);
-  };
+  }
+
+
+
+  // safasfasf
+  @Output() colorSelected = new EventEmitter<string>();
+  displayColorPicker = false;
+
+  openColorPicker() {
+    this.displayColorPicker = !this.displayColorPicker;
+  }
+
+  selectColor(event: any) {
+    const selectedColor = event.target.value;
+    this.colorSelected.emit(selectedColor);
+    this.displayColorPicker = false;
+  }
 }
