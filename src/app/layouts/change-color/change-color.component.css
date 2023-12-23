@@ -7,3 +7,10 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+#colorPickerContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
