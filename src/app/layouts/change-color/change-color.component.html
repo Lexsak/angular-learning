@@ -12,23 +12,7 @@
       <p>Rozwin Menu</p>
     </div>
     <div class="dropdown-menu" *ngIf="isDropDown">
-      <!-- <div class="options" (click)="changeColor('#ffffff')">
-        <p>1</p>
-      </div>
-      <div class="options" (click)="changeColor('#ddd')">
-        <p>2</p>
-      </div>
-      <div class="options" (click)="changeColor('#aaa')">
-        <p>3</p>
-      </div>
-      <div class="options" (click)="changeColor('#aaa')">
-        <p>4</p>
-      </div>
-      <div class="options" (click)="changeColor('#aaa')">
-        <p>5</p>
-      </div> -->
-
-      <div *ngFor="let colorPalette of colorPalettes" class="options" (click)="changeColor('#ffffff')">
+      <div *ngFor="let colorPalette of colorPalettes" class="options" (click)="changeColor(colorPalette.colors[0], colorPalette.colors[1])">
         <p>{{colorPalette.name}}</p>
       </div>
     </div>

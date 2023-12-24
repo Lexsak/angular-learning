@@ -60,4 +60,5 @@ input[type="color"]::-webkit-color-swatch {
 .options{
   border: 1px solid black;
   padding: 0px 16px;
+  cursor: pointer;
 }
