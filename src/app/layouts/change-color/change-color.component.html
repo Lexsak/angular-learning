@@ -4,4 +4,11 @@
 <hr />
 <div class="colorContainer">
   <input type="color" class="btn-color color-text" (input)="changeSecondColor($event)" />
+  <div>
+      <label for="options">Wybierz opcję:</label>
+      <select id="options" (change)="onOptionSelected($event)">
+        <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+      </select>
+      <p>Wybrana opcja: {{ selectedOption }}</p>
+    </div>
 </div>

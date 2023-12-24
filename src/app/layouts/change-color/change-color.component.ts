@@ -21,4 +21,11 @@ export class ChangeColorComponent {
     this.colorService.setSecondColor(color);
   }
 
+  options = ['Opcja 1', 'Opcja 2', 'Opcja 3'];
+  selectedOption: string = '';
+
+  onOptionSelected(event: any) {
+    const value = event?.target?.value;
+    this.selectedOption = value;
+  }
 }
