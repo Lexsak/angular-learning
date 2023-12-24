@@ -24,7 +24,12 @@ export class ChangeColorComponent {
   // DropDown
   isDropDown: boolean = false;
 
-  changeDropDown(){
-    this.isDropDown = !this.isDropDown
+  changeDropDown() {
+    this.isDropDown = !this.isDropDown;
+  }
+
+  changeColor(hax: string){
+    this.colorService.setSecondColor(hax);
+    this.isDropDown = false;
   };
 }

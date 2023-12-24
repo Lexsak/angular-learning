@@ -11,7 +11,7 @@
   position: absolute;
   width: auto;
   height: auto;
-  color: white;
+  color: #ffffff;
   border: none;
   top: 50%;
   left: 50%;
@@ -32,12 +32,3 @@ input[type="color"]::-webkit-color-swatch {
 
 
 /* DropDown */
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-repeat: no-repeat;
-  background-position: right 0.7em top 50%, 0 0;
-  background-size: 1.5em auto;
-  padding: 0.5em;
-}
