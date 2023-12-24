@@ -22,7 +22,7 @@ export class ChangeColorComponent {
   }
 
   // DropDown
-  isDropDown: boolean = false;
+  isDropDown: boolean = true;
 
   changeDropDown() {
     this.isDropDown = !this.isDropDown;
