@@ -4,4 +4,18 @@
 <hr />
 <div class="colorContainer">
   <input type="color" class="btn-color color-text" (input)="changeSecondColor($event)" />
+  
+  
+  <!-- DropDown -->
+  <div class="dropdown-container">
+    <div class="dropdown-text" (click)="changeDropDown()">
+      <p>Rozwin Menu</p>
+    </div>
+    <div class="dropdown-menu" *ngIf="isDropDown">
+      <div *ngFor="let colorPalette of colorPalettes" class="options" (click)="changeColor(colorPalette.colors[0], colorPalette.colors[1])">
+        <p>{{colorPalette.name}}</p>
+      </div>
+    </div>
+  </div>
+
 </div>

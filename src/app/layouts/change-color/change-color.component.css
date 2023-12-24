@@ -11,7 +11,7 @@
   position: absolute;
   width: auto;
   height: auto;
-  color: white;
+  color: #ffffff;
   border: none;
   top: 50%;
   left: 50%;
@@ -28,4 +28,37 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
   border: none; /* Usunięcie obramowania */
   border-radius: 5px; /* Usunięcie zaokrąglenia */
+}
+
+
+/* DropDown */
+.colorContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-text {
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 8px 16px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  bottom: 100%; /* Ustawia górną krawędź .dropdown-menu na 100% od dołu .dropdown-container */
+  left: 0;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.options{
+  border: 1px solid black;
+  padding: 0px 16px;
+  cursor: pointer;
 }
