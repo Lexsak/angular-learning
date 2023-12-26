@@ -1,21 +1,37 @@
-<input type="color" (input)="changeMainColor($event)" />
-<input type="color" (input)="changeSecondColor($event)" />
+<div class="container">
+  <input type="color" (input)="changeMainColor($event)" />
+  <input type="color" (input)="changeSecondColor($event)" />
 
-<hr />
-<div class="colorContainer">
-  <input type="color" class="btn-color color-text" (input)="changeMainColor($event)" />
-  <input type="color" class="btn-color second-color" value="#e66465" (input)="changeSecondColor($event)" />
-  
-  <!-- DropDown -->
-  <div class="dropdown-container">
-    <div class="dropdown-text" (click)="changeDropDown()">
-      <p>Rozwin Menu</p>
-    </div>
-    <div class="dropdown-menu" *ngIf="isDropDown">
-      <div *ngFor="let colorPalette of colorPalettes" class="options" (click)="changeColor(colorPalette.colors[0], colorPalette.colors[1])">
-        <p>{{colorPalette.name}}</p>
+  <br /><br>
+  <hr />
+  <br />
+  <div class="colorContainer">
+    <input
+      type="color"
+      class="btn-color color-text"
+      (input)="changeMainColor($event)"
+    />
+    <input
+      type="color"
+      class="btn-color second-color"
+      value="#e66465"
+      (input)="changeSecondColor($event)"
+    />
+
+    <!-- DropDown -->
+    <div class="dropdown-container">
+      <div class="dropdown-text" (click)="changeDropDown()">
+        <p>Rozwin Menu</p>
+      </div>
+      <div class="dropdown-menu" *ngIf="isDropDown">
+        <div
+          *ngFor="let colorPalette of colorPalettes"
+          class="options"
+          (click)="changeColor(colorPalette.colors[0], colorPalette.colors[1])"
+        >
+          <p>{{ colorPalette.name }}</p>
+        </div>
       </div>
     </div>
   </div>
-
 </div>
