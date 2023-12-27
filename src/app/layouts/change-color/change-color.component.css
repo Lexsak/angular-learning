@@ -26,6 +26,10 @@
  content: "Background";
 }
 
+.accent-color::after{
+ content: "Accent";
+}
+
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0; /* Resetowanie domyślnych styli */
 }

@@ -9,7 +9,11 @@ import { ColorService } from 'src/app/color.service';
 export class AboutComponent {
   constructor(private colorService: ColorService) {}
 
-  getSecondColor(){
+  getSecondColor() {
     return this.colorService.secondColor;
+  }
+
+  getAccentColor() {
+    return this.colorService.accentColor;
   }
 }

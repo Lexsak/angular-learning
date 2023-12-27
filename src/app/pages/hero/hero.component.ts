@@ -12,4 +12,8 @@ export class HeroComponent {
   getSecondColor() {
     return this.colorService.secondColor;
   }
+
+  getAccentColor(){
+    return this.colorService.accentColor;
+  }
 }
