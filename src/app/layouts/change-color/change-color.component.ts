@@ -27,6 +27,11 @@ export class ChangeColorComponent {
     this.colorService.setSecondColor(color);
   }
 
+  changeAccentsColor(event: any){
+    const color = event?.target?.value;
+    this.colorService.setAccentColor(color);
+  }
+
   // DropDown
   colorPalettes: ColorPalettes[] = [
     { id: 1, name: 'Mono', colors: ['#ffffff', '#ddd'] },
