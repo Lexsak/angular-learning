@@ -27,7 +27,7 @@ export class ChangeColorComponent {
     this.colorService.setSecondColor(color);
   }
 
-  changeAccentsColor(event: any){
+  changeAccentsColor(event: any) {
     const color = event?.target?.value;
     this.colorService.setAccentColor(color);
   }
@@ -50,5 +50,18 @@ export class ChangeColorComponent {
     this.colorService.setMainColor(hax1);
     this.colorService.setSecondColor(hax2);
     this.isDropDown = false;
+  }
+
+  // Get color Values to inputs
+  getSecondColor() {
+    return this.colorService.secondColor;
+  }
+
+  getAccentColor() {
+    return this.colorService.accentColor;
+  }
+
+  getBackgroundColor() {
+    return this.colorService.mainColor;
   }
 }
