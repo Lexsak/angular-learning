@@ -9,19 +9,19 @@
     <input
       type="color"
       class="btn-color color-text"
-      (value)="getSecondColor()"
+      [value]="getBackgroundColor()"
       (input)="changeMainColor($event)"
     />
     <input
       type="color"
       class="btn-color second-color"
-      (value)="getBackgroundColor()"
+      [value]="getSecondColor()"
       (input)="changeSecondColor($event)"
     />
     <input
       type="color"
       class="btn-color accent-color"
-      (value)="getAccentColor()"
+      [value]="getAccentColor()"
       (input)="changeAccentsColor($event)"
     />
 
