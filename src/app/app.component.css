@@ -1,5 +1,17 @@
-.appContainer{
-    width: 100%;
-    height: 20vh;
-    background-color: gray;
+.appContainer {
+  width: 100%;
+  height: 40vh;
+  background-color: gray;
+}
+
+.cosTam {
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  z-index: 1000;
 }
