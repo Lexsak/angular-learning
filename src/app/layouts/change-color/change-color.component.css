@@ -59,6 +59,7 @@ input[type="color"]::-webkit-color-swatch {
   width: 60%;
   padding: 20px;
   gap: 2rem;
+  border-radius: 8px;
 }
 
 .dropdown-container {
