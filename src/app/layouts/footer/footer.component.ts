@@ -10,6 +10,6 @@ export class FooterComponent {
   constructor(private colorService: ColorService) {}
 
   getBackgroundColor(): string {
-    return this.colorService.mainColor;
+    return this.colorService.textColor;
   }
 }

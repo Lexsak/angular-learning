@@ -10,7 +10,7 @@ export class NavbarComponent {
   constructor(private colorService: ColorService){}
 
   getBackgroundColor(): string {
-    return this.colorService.mainColor;
+    return this.colorService.textColor;
   }
 
   
