@@ -54,7 +54,7 @@ export class ChangeColorComponent {
 
   // Get color Values to inputs
   getSecondColor() {
-    return this.colorService.secondColor;
+    return this.colorService.backgroundColor;
   }
 
   getAccentColor() {

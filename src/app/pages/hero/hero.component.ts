@@ -10,7 +10,7 @@ export class HeroComponent {
   constructor(private colorService: ColorService) {}
 
   getSecondColor() {
-    return this.colorService.secondColor;
+    return this.colorService.backgroundColor;
   }
 
   getAccentColor(){
