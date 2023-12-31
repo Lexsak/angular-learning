@@ -8,6 +8,7 @@ import { HeroComponent } from './pages/hero/hero.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { ChangeColorComponent } from './layouts/change-color/change-color.component';
+import { CopyColorComponent } from './layouts/copy-color/copy-color.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChangeColorComponent } from './layouts/change-color/change-color.compon
     HeroComponent,
     AboutComponent,
     FooterComponent,
-    ChangeColorComponent
+    ChangeColorComponent,
+    CopyColorComponent
   ],
   imports: [
     BrowserModule,
