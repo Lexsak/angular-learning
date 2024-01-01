@@ -64,4 +64,6 @@ export class ChangeColorComponent {
   getBackgroundColor() {
     return this.colorService.textColor;
   }
+
+  copyColor() {}
 }
