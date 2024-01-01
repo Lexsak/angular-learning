@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from 'src/app/app.component';
 import { ColorService } from 'src/app/color.service';
 
 export interface ColorPalettes {
@@ -15,7 +16,7 @@ export interface ColorPalettes {
 export class ChangeColorComponent {
   color: string = '#808080';
 
-  constructor(private colorService: ColorService) {}
+  constructor(private colorService: ColorService, private colorCopy: AppComponent) {}
 
   changeMainColor(event: any) {
     const color = event?.target?.value;
@@ -65,5 +66,10 @@ export class ChangeColorComponent {
     return this.colorService.textColor;
   }
 
-  copyColor() {}
+  copyColor() {
+    
+    console.log(this.colorCopy.isColorCopy);
+    
+    
+  }
 }
