@@ -16,7 +16,10 @@ export interface ColorPalettes {
 export class ChangeColorComponent {
   color: string = '#808080';
 
-  constructor(private colorService: ColorService, private colorCopy: AppComponent) {}
+  constructor(
+    private colorService: ColorService,
+    private colorCopy: AppComponent
+  ) {}
 
   changeMainColor(event: any) {
     const color = event?.target?.value;
@@ -67,9 +70,6 @@ export class ChangeColorComponent {
   }
 
   copyColor() {
-    
-    console.log(this.colorCopy.isColorCopy);
-    
-    
+    this.colorCopy.isColorCopy = !this.colorCopy.isColorCopy;
   }
 }

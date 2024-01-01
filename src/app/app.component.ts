@@ -8,5 +8,5 @@ import { Component, Output } from '@angular/core';
 export class AppComponent {
   title = 'angular-learning';
 
-  @Output() isColorCopy: boolean = false
+  isColorCopy: boolean = false
 }
