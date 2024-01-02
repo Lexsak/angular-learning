@@ -8,6 +8,8 @@ export class ColorService {
   backgroundColor: string = '#e66465';
   accentColor: string = '#23D158';
 
+  copyColors: string = '';
+
   setMainColor(color: string): void {
     this.textColor = color;
   }
