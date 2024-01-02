@@ -1,12 +1,23 @@
-.copyContainer{
-    width: 200px;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: 3px solid black;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.copyContainer {
+  width: 200px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 3px solid black;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.copyBtn {
+  border: 1px solid white;
+  padding: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.copyBtn:hover {
+  background-color: white;
+  color: black;
 }
