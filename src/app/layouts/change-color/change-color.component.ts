@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { AppComponent } from 'src/app/app.component';
 import { ColorService } from 'src/app/color.service';
 
@@ -38,13 +38,27 @@ export class ChangeColorComponent {
 
   // DropDown
   colorPalettes: ColorPalettes[] = [
-    { id: 1, name: 'Mono', colors: ['#ffffff', '#ddd'] },
-    { id: 2, name: 'Nono', colors: ['#ddd', '#ffffff'] },
+    { id: 1, name: 'Mono', colors: ['#ffffff', '#dddddd'] },
+    { id: 2, name: 'Nono', colors: ['#000000', '#ffffff'] },
     { id: 3, name: 'Hono', colors: ['asfas', 'asfasf'] },
     { id: 4, name: 'Bono', colors: ['asfas', 'asfasf'] },
     { id: 5, name: 'Cono', colors: ['asfas', 'asfasf'] },
   ];
+
   isDropDown: boolean = false;
+
+  @HostListener('document:click', ['$event'])
+  handleDocumentClick(event: Event) {
+    if (this.isDropDown) {
+      const clickedElement = event.target as HTMLElement;
+      
+
+      // Sprawdź czy kliknięcie nie nastąpiło wewnątrz dropdown-container
+      if (!clickedElement.closest('.dropdown-container')) {
+        this.isDropDown = false;
+      }
+    }
+  }
 
   changeDropDown() {
     this.isDropDown = !this.isDropDown;
