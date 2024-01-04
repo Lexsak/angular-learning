@@ -36,6 +36,16 @@ export class ChangeColorComponent {
     this.colorService.setAccentColor(color);
   }
 
+  changeSecondaryColor(event: any) {
+    const color = event?.target?.value;
+    this.colorService.setSecondColor(color);
+  }
+
+  changePrimaryColor(event: any) {
+    const color = event?.target?.value;
+    this.colorService.setPrimaryColor(color);
+  }
+
   // DropDown
   colorPalettes: ColorPalettes[] = [
     { id: 1, name: 'Mono', colors: ['#ffffff', '#dddddd'] },
@@ -83,11 +93,11 @@ export class ChangeColorComponent {
   }
 
   getSecondaryColor() {
-    return this.colorService.textColor;
+    return this.colorService.secondaryColor;
   }
 
   getPrimaryColor() {
-    return this.colorService.textColor;
+    return this.colorService.primaryColor;
   }
 
   copyColor() {

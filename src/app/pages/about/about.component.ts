@@ -16,4 +16,12 @@ export class AboutComponent {
   getAccentColor() {
     return this.colorService.accentColor;
   }
+
+  getPrimaryColor() {
+    return this.colorService.primaryColor;
+  }
+
+  getSecondaryColor() {
+    return this.colorService.secondaryColor;
+  }
 }
