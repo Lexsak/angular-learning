@@ -47,6 +47,12 @@
 .accent-color::after {
   content: "Accent";
 }
+.primary-color::after {
+  content: "Primary";
+}
+.secondary-color::after {
+  content: "Secondary";
+}
 
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0; /* Resetowanie domyślnych styli */
