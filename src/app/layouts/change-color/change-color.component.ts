@@ -51,7 +51,6 @@ export class ChangeColorComponent {
   handleDocumentClick(event: Event) {
     if (this.isDropDown) {
       const clickedElement = event.target as HTMLElement;
-      
 
       // Sprawdź czy kliknięcie nie nastąpiło wewnątrz dropdown-container
       if (!clickedElement.closest('.dropdown-container')) {
@@ -80,6 +79,14 @@ export class ChangeColorComponent {
   }
 
   getBackgroundColor() {
+    return this.colorService.textColor;
+  }
+
+  getSecondaryColor() {
+    return this.colorService.textColor;
+  }
+
+  getPrimaryColor() {
     return this.colorService.textColor;
   }
 

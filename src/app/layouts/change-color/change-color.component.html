@@ -15,9 +15,22 @@
     <input
       type="color"
       class="btn-color accent-color"
+      [value]="getSecondaryColor()"
+      (input)="changeAccentsColor($event)"
+    />
+    <input
+      type="color"
+      class="btn-color accent-color"
+      [value]="getPrimaryColor()"
+      (input)="changeAccentsColor($event)"
+    />
+    <input
+      type="color"
+      class="btn-color accent-color"
       [value]="getAccentColor()"
       (input)="changeAccentsColor($event)"
     />
+    
 
     <!-- DropDown -->
     <div class="dropdown-container">
