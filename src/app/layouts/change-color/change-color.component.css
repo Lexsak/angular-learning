@@ -91,3 +91,14 @@ input[type="color"]::-webkit-color-swatch {
   padding: 0px 16px;
   cursor: pointer;
 }
+
+.darkLight{
+  background-color: black;
+  color: white;
+  transition: all .3s ease-in-out;
+}
+
+.darkLight:hover{
+  background-color: white;
+  color: black;
+}
