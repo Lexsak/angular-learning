@@ -5,7 +5,7 @@
 }
 
 .colorBar {
-  color: #fff;
+  color: red;
   padding: 10px;
   cursor: pointer;
   position: fixed;

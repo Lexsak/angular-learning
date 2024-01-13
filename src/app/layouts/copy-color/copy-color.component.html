@@ -1,8 +1,11 @@
 <div class="copyContainer">
-  <p>Text: {{getBackgroundColor()}}</p>
-  <p>Background: {{getSecondColor()}}</p>
-  <p>Accent: {{getAccentColor()}}</p>
+  <p>--text: {{getBackgroundColor()}}</p>
+  <p>--background: {{getSecondColor()}}</p>
+  <p>--accent: {{getAccentColor()}}</p>
   <div class="copyBtn" (click)="copyColors()">
     <p>Copy</p>
+  </div>
+  <div class="copyBtn" (click)="copyColors()">
+    <p>RGB</p>
   </div>
 </div>
